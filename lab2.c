@@ -17,6 +17,7 @@ int main()
 int part1()
 {
     // declaring constant with uppercase(https://www.w3schools.com/c/c_constants.php)
+    printf("part 1\n");
     const short SHORT1 = 0x6c;
     const int INT1 = 89761;
     const long LONG1 = -37;
@@ -39,7 +40,7 @@ int part1()
     test_int2 = 82.4;
     test_long2 = 6785940321;
     test_unshort2 = 879;
-    printf("short2: %d, int2: %d, long2: %ld, unsigned_short2: %d\n", test_short2, test_int2, test_long2, test_unshort2);
+    printf("short2: %d, int2: %d, long2: %ld, unsigned_short2: %d\n\n", test_short2, test_int2, test_long2, test_unshort2);
     // short2: 256, int2: 82, long2: 6785940321, unsigned_short2: 879
     //  the value 82.4 , so we have implicit conversion here
 
@@ -47,7 +48,10 @@ int part1()
 }
 
 
-int part2(){
+int part2()
+{
+    printf("part 2\n");
+
     const float FLOAT1 = 0.0908070605;
     const float FLOAT2 = -116655773377.99;
     const float FLOAT3 = (78.52) * pow(10, -49);
@@ -67,7 +71,7 @@ int part2(){
     // The result in test_double2 is -inf because the value exceeds the maximum range of the double type.
 
     test_float2 = (78.52) * pow(10, -49);
-    printf("float2: %e\n", test_float2);
+    printf("float2: %e\n\n", test_float2);
     // The reult is 0 because the number is too small to be represented by the float type.
 
 
@@ -75,11 +79,13 @@ int part2(){
 }
 
 
-int part3(){
+int part3()
+{
+     printf("part 3\n");
+
     int operand1;
     int operand2;
     double result;
-    //
 
     operand1 = -29;
     result = operand1;
